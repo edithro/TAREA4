@@ -4,14 +4,20 @@ body{
 }
 .container-fondo{
     width: 100%;
-    height: 80%;
+    height: 92%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(./Diseño\ sin\ título.png);
+    background-color: rgba(0, 0, 0, 0.4);
+    /*background-image: url(./Diseño\ sin\ título.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: cover;*/
+}
+.container-fondo img{
+    margin-top: 0;
+    width: 80%;    
+    object-fit: cover;
 }
 .portada{
     width: 100%;
@@ -19,14 +25,298 @@ body{
     position: absolute;
 }
 .navbar{
+    position: fixed;
     width: 100%;
     z-index: 3;
-    position: fixed;
+    background-color: rgba(0, 0, 0, 0.4);
 }
-.barra{
+.lista-navegacion{
     padding: 0;
-    width: 30%;
     list-style: none;
     display: flex;
-    justify-content: center;    
+    justify-content: center;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.lista-navegacion li{
+    font-family: 'Patua One', cursive;
+    margin: 15px;
+    color: white;
+    font-size: 1em;
+}
+.lista-navegacion li:hover{
+    color: #C70039
+}
+.portada{
+    width: 350px;
+    height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #C70039;
+    display: inline-block;
+    border-radius: 300px;
+}
+.portada h1{
+    font-family: 'Pattaya', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35%;
+    font-size: 3.5em;
+}
+.portada p{
+    font-family: 'Patua One', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: unset;
+    font-size: 2em;
+    margin-bottom: 50px;
+}
+.seccion-conocenos{
+    margin: 10px 0;
+    display: flex;
+}
+.container-conocenos{
+    flex-wrap: wrap;
+    width: 40%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 0px 0px 26px 9px rgba(0,0,0,0.64);
+    -webkit-box-shadow: 0px 0px 26px 9px rgba(0,0,0,0.64);
+    -moz-box-shadow: 0px 0px 26px 9px rgba(0,0,0,0.64);
+    background-color: rgba(199, 0, 57);
+    padding: 2%;
+}
+.container-conocenos h2{
+    font-family: 'Patua One', cursive;
+    font-size: 2em;  
+}
+.container-conocenos p{
+    font-family: 'Pattaya', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    text-align: justify;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+.imagen2{
+    background-image: url(./IMAGEN2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width: 50%;
+    border-radius: 30px;
+   /*box-shadow: 0px 0px 26px 9px rgba(0,0,0,0.64);
+    -webkit-box-shadow: 0px 0px 26px 9px rgba(0,0,0,0.64);
+    -moz-box-shadow: 0px 0px 26px 9px rgba(0,0,0,0.64);*/
+}
+.seccion-artistas{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0px 0px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 20px;
+}
+.card-artistas{
+    width: 20%;
+    border-radius: 20px;
+    border: 0.1px rgba(0, 0, 0, 0.64) ridge;
+}
+.card-artistas img{
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.card-artistas h3{
+    font-family: 'Patua One', cursive;
+    text-align: center;
+    font-size: 1.2em;
+}
+.card-artistas p{
+    font-family: 'Pattaya', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    text-align: justify;
+    font-size: 1em;
+    letter-spacing: 1px;
+    padding: 10px;
+}
+.boton-contenedor{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.boton-contenedor input{
+    width: 50%;
+    height: 30px;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.3) ;
+    font-family: 'Patua One', cursive;
+    color: black;
+    font-size: 1em;
+    align-items: center;
+}
+.boton-contenedor input:hover{
+    color: #C70039
+}
+.boton-contenedorsole{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boton-contenedorsole input{
+    margin: 40px 10px;
+    width: 50%;
+    height: 30px;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.3) ;
+    font-family: 'Patua One', cursive;
+    color: black;
+    font-size: 1em;
+    align-items: center;
+}
+.boton-contenedorsole input:hover{
+    color: #C70039
+}
+.boton-contenedorjuan{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boton-contenedorjuan input{
+    margin-top: 210px;
+    width: 50%;
+    height: 30px;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.3) ;
+    font-family: 'Patua One', cursive;
+    color: black;
+    font-size: 1em;
+    align-items: center;
+}
+.boton-contenedorjuan input:hover{
+    color: #C70039
+}
+.seccion-comprar{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+}
+.formulario-comprar{
+    width: 30%;
+    height: 300px;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(199, 0, 57);
+    border-radius: 30px;
+}
+.formulario-comprar form{
+    width: 90%;
+}
+.formulario-comprar h2{
+    font-family: 'Patua One', cursive;
+    text-align: center;
+    font-size: 1.6em;
+}
+.contenedor-input{
+    margin: 10px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.contenedor-input input{
+    width: 80%;
+    height: 30px;
+}
+.label{
+    font-family: 'Patua One', cursive;
+    display: flex;
+    align-items: center;
+}
+.contenedor-botoncomprar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.contenedor-botoncomprar button{
+    width: 40%;
+    height: 40px;
+    background-color: white transparent;
+    border-radius: 10px;
+    font-family: 'Patua One', cursive;
+    font-size: 1em;
+}
+.contenedor-botoncomprar button:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+}
+footer{
+    margin-top: 5px;
+    width: 100%;
+    background-color: black;
+    height: 30%;
+    display: flex;
+    align-items: center;
+}
+.contacto{
+    width: 70%;
+    display: inline-block;
+    justify-content: flex-start;
+}
+.contacto h2{
+    font-family: 'Patua One', cursive;
+    color: white;
+    text-align: start;
+    font-size: 1.5em;
+    margin-left: 15px;
+}
+.contenido{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    display: inline-block;
+}
+.contenido p{
+    margin: 5px 5px;
+    font-family: 'Pattaya', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    text-align: justify;
+    font-size: 1em;
+    letter-spacing: 1px;
+    padding: 10px;
+    color: white;
+
+}
+.contenedor-iconos{
+    width: 20%;
+     display: flex;
+    justify-content: center;
+}
+.contenedor-iconos i {
+    color: white;
+    font-size: 2em;
+    margin: 0px 10px;
 }
